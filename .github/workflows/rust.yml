@@ -7,7 +7,9 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
       - name: Install Trunk 🚚
-        run: cargo install trunk
+        uses: jetli/trunk-action@v0.1.0
+        with:
+          version: "latest"
       - name: Install Dependences 🤖
         run: cargo build
       - name: Build The Project 🔧
