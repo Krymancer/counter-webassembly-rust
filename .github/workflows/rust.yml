@@ -12,6 +12,8 @@ jobs:
           version: "latest"
       - name: Install Dependences 🤖
         run: cargo build
+      - name: Select Target 🎯
+        run: rustup target add wasm32-unknown-unknown
       - name: Build The Project 🔧
         run: trunk build
       - name: Deploy 🚀
