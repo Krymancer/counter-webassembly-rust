@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --Background: #282a36;
+  --Current-Line: #44475a;
+  --Foreground: #f8f8f2;
+  --Comment: #6272a4;
+  --Cyan: #8be9fd;
+  --Green: #50fa7b;
+  --Orange: #ffb86c;
+  --Pink: #ff79c6;
+  --Purple: #bd93f9;
+  --Red: #ff5555;
+  --Yellow: #f1fa8c;
+}
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--Background);
+}
+
+button {
+  border: 0;
+  padding: 0.5em 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0.5em 0.5em;
+  width: 5em;
+
+  color: var(--Current-Line);
+  cursor: pointer;
+}
+
+.plus {
+  background-color: var(--Green);
+}
+
+.minus {
+  background-color: var(--Red);
+}
+
+.plus-minus {
+  background-color: var(--Cyan);
+}
+
+.counter {
+  color: var(--Purple);
+  font-size: 10em;
+  text-align: center;
+  font-weight: 900;
+}
+
+.footer {
+  text-align: center;
+  font-size: 2em;
+  color: var(--Foreground);
+}
+
+.panel {
+  display: flex;
+  justify-content: center;
+}
